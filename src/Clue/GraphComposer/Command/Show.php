@@ -13,7 +13,7 @@ class Show extends \Composer\Command\BaseCommand
 {
     protected function configure()
     {
-        $this->setName('show')
+        $this->setName('graph:show')
              ->setDescription('Show dependency graph image for given project directory')
              ->addArgument('dir', InputArgument::OPTIONAL, 'Path to project directory to scan', '.')
              ->addOption('format', null, InputOption::VALUE_REQUIRED, 'Image format (svg, png, jpeg)', 'svg')

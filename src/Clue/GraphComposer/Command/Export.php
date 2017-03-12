@@ -13,7 +13,7 @@ class Export extends \Composer\Command\BaseCommand
 {
     protected function configure()
     {
-        $this->setName('export')
+        $this->setName('graph:export')
              ->setDescription('Export dependency graph image for given project directory')
              ->addArgument('dir', InputArgument::OPTIONAL, 'Path to project directory to scan', '.')
              ->addArgument('output', InputArgument::OPTIONAL, 'Path to output image file')
