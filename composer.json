@@ -6,7 +6,6 @@
     "homepage": "https://github.com/clue/graph-composer",
     "license": "MIT",
     "require": {
-        "php": "^5.3.6 || ^7.0",
         "clue/graph": "^0.9.0",
         "jms/composer-deps-analyzer": "^1.0",
         "graphp/graphviz": "^0.2.0",
