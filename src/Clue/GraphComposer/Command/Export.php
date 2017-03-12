@@ -15,7 +15,6 @@ class Export extends \Composer\Command\BaseCommand
     {
         $this->setName('graph:export')
              ->setDescription('Export dependency graph image for given project directory')
-             ->addArgument('dir', InputArgument::OPTIONAL, 'Path to project directory to scan', '.')
              ->addArgument('output', InputArgument::OPTIONAL, 'Path to output image file')
 
              // add output format option. default value MUST NOT be given, because default is to overwrite with output extension
@@ -26,7 +25,7 @@ class Export extends \Composer\Command\BaseCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $graph = new GraphComposer($input->getArgument('dir'));
+        $graph = new GraphComposer(getcwd());
 
         $target = $input->getArgument('output');
         if ($target !== null) {
