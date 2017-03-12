@@ -9,7 +9,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Clue\GraphComposer\Graph\GraphComposer;
 
-class Export extends Command
+class Export extends \Composer\Command\BaseCommand
 {
     protected function configure()
     {
